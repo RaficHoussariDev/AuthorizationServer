@@ -48,6 +48,7 @@ public class AuthorizationServerConfig {
                 .clientSecret("{noop}123456")
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_POST)
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
+                .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
                 .redirectUri("https://oidcdebugger.com/debug")
                 .scope(OidcScopes.OPENID)
                 .build();
@@ -58,6 +59,7 @@ public class AuthorizationServerConfig {
                 .clientSecret("{noop}123")
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_POST)
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
+                .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
                 .redirectUri("https://oidcdebugger.com/debug")
                 .tokenSettings(tokenSettings())
                 .scope("writeIngredients")

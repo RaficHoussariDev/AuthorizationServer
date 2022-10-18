@@ -13,6 +13,7 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @EnableWebSecurity
 public class SecurityConfig {
+    // API request to get the token http://localhost:8080/oauth2/token
     @Bean
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
         http
